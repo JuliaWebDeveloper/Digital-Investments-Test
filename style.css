@@ -1,0 +1,590 @@
+body {
+    background: rgba(38, 12, 101, 1);
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+} 
+
+#main{
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    height: 100vh;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    margin-top: 28px;
+}
+
+#nav-main,.nav-link,#main-container,#bg-container,#bg-stars-rectangle {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.nav-logo {
+    margin-left: 72px;
+}
+
+.logo-A {
+    margin-right: 18px;
+}
+
+#burger, [for=burger] {
+    display: none;
+}
+
+.btn-close {
+    display: none;
+}
+
+.nav-link {
+    width: 553px;
+}
+
+.link a {
+    font-size: 20px;
+    line-height: 22px;
+    text-align: left;
+    text-decoration:none;
+}
+
+.link {
+    list-style-type:none;
+    gap: 60px;
+}
+
+.btn-promo {
+    width: 196px;
+    height: 54px;
+    background: linear-gradient(160.04deg, #5E44FC -6.25%, #250858 165.17%);
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    margin-right: 72px;
+    border: none;
+    border-radius: 50px;
+}
+
+#bg-container {
+    align-items: start;
+    position: relative;
+    z-index: 1;
+    max-height: 100%;
+    width: 100%;
+}
+
+#bg-stars-rectangle {
+    max-height: 100vh;
+    margin-top: -900px;
+} 
+
+.bg-stars,.bg-rectangle {
+    position: relative;
+    z-index: 2;
+}
+#bg-circle {
+    margin-top: -810px;
+    margin-right: -100px;
+}
+
+#bg-circle,#Iphone-screen,#Iphone-screen-up {
+    display: flex;
+    justify-content: end;
+    max-height: 100vh;
+} 
+
+.bg-circle {
+    position: relative;
+    z-index: 3;
+    width: 1500px; 
+}
+
+#main-container {
+    margin-top: -850px;
+}
+
+.text-container {
+    position: relative;
+    z-index: 6;
+}
+
+h1,p,.btn-promo,.link a {
+    font-family: "Philosopher", sans-serif;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 0px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 68px;
+    line-height: 71px;
+    text-align: left;
+    margin-top:0px;
+    width: 65%;
+    margin-left: 77px;
+}
+
+h1 span,p span {
+    color: rgba(205, 170, 245, 1);
+}
+
+p {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+    width: 40%;
+    margin-left: 77px;
+}
+
+p span {
+    font-weight: 700;
+}
+
+.solar {
+    position: relative;
+    margin-top: -30px;
+}
+
+.btn-promo.green {
+    background: linear-gradient(180deg, #00FFA3 -24.53%, #301D5F 183.96%);
+    position: absolute;
+    z-index: 1;
+    margin-left:-110px;
+    margin-top: 30px;
+}
+
+#app {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-height: 100vh;
+    width: 50%;
+}
+
+.card-container{
+    position: relative;
+    z-index: 5;  
+    margin-right: 150px; 
+}
+
+#Iphone-screen {
+    margin-top: -468px;
+    margin-right: 328px;
+}
+
+.Iphone-screen,.Iphone-screen-up,.app {
+    position: relative;
+    z-index: 5;
+}
+
+.Iphone-screen,.Iphone-screen-up {
+    transform: rotate(.1deg);
+}
+
+#Iphone-screen-up {
+    margin-top: -400px;
+    margin-right: 380px;
+}
+
+@media all and (max-width: 1440px) {
+
+    #main {
+        overflow: hidden;
+    }
+
+    .bg-right {
+        transform: scale(1.4);
+        margin-right: 90px;
+        margin-top: 50px;
+    }
+
+    .bg-stars {
+        margin-left: 70px;
+    }
+
+    #bg-circle {
+        margin-right: -225px;
+        margin-top: -700px;
+    }
+
+    .bg-circle {
+        transform: scale(1.3) rotate(9deg);
+    }
+
+    h1 {
+        width: 85%;
+        margin-top:-210px;
+    }
+
+    p {
+        margin-top:-12px;
+        width: 53%;
+    }
+
+    .solar {
+        margin-top:-42px;
+    }
+
+    .btn-promo.green{
+        margin-top:20px;
+    }
+
+    #app {
+        width: 60%;
+        margin-top: 30px;
+        margin-left:60px;
+    }
+
+    .app {
+        width: 230px;
+    }
+
+    .card-container {
+        margin-top: -210px;
+        margin-right: 140px;   
+    }
+
+    .card,.Iphone-screen {
+        transform: scale(1.4);
+    }
+
+    .Iphone-screen {
+        margin-top: -16px;
+        margin-right: 10px;
+    }
+
+    .Iphone-screen-up{
+        transform: scale(1.3);
+        margin-top: -140px;
+        margin-right: 5px;
+    }    
+}
+
+@media all and (max-width: 768px) {
+
+    nav {
+        margin:0px ;
+    }
+
+    .nav-logo {
+        margin-top:25px;
+        margin-left: 24px;
+    }
+
+    .logo-A {
+        width: 30%;
+    }
+
+    .nav-link {
+        width: 332px; 
+        height: 32px;
+        margin-top:29px;
+    }
+
+    .link a,.btn-promo,.btn-promo.green {
+        font-size: 14px; 
+    }
+
+    .link a{
+       
+        width: 114px;
+        height: 16px;
+        padding: 8px;
+        gap: 10px;
+        line-height: 16px;
+    }
+
+    .btn-promo {
+        width: 149px;
+        height: 36px;
+        margin-top:25px;
+        margin-right: 24px;
+    }
+
+    .bg-stars {
+        margin-left: 20px;
+        width: 50%;
+        margin-top: -220px;
+    }
+
+    #bg-circle {
+        margin-right: -230px;
+        margin-top: -790px;
+    }
+
+    .bg-circle {
+        transform: scale(1) rotate(10deg);    
+    }
+
+    #main-container {
+        margin-left: 24px;
+    }
+
+    .text-container {
+        width: 60vw;
+    }
+
+    h1 {
+        margin-left: 0px;
+        width: 62vw;
+        margin-top:-30px;
+        font-size: 44px; 
+        line-height: 46px;
+    }
+
+    p {
+        width: 69%;
+        margin-left: 0px;
+        font-size: 16px; 
+    }
+
+    .solar {
+        margin-left: -60px;
+    }
+
+    .btn-promo.green {
+        width: 196px;
+        height: 54px;
+    }
+
+    #app {
+        margin-left: -40px;
+        margin-top: -25px;
+    }
+
+    .app {
+        margin: 6px;
+        width: 180px;
+    }
+
+    .card-container {
+        margin-top: -20px;
+        margin-left: -65px;
+    }
+
+    .card,.Iphone-screen {
+        transform: scale(1);
+    }
+
+    .card {
+        margin-right: 50px;
+    }
+
+    .Iphone-screen{
+        transform: scale(1); 
+        margin-top: 8px;
+        margin-right: -252px;
+    }
+
+    .Iphone-screen-up {
+        transform: scale(.9);
+        margin-top: 0px;
+        margin-right: -255px;
+    }
+}
+
+@media all and (max-width: 360px) {
+
+    #main {
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    #nav-main {
+        max-width: 100%;
+    }
+
+    .nav-logo {
+        margin-top: 12px;
+        margin-left: 16px;
+    }
+
+    .logo-A {
+        width: 33.05px;
+        height: 30.68px;
+        margin-right: 10px;
+    }
+
+    .logo {
+        margin-top: 16px;
+        margin-left: 40px;
+        width: 40%;
+        position: fixed;
+        width: 22.03px;
+        height: 12.27px;
+    }
+
+    .logo-A,.btn-promo {
+        position: fixed;
+    }
+
+    [for=burger] {
+        display: block;
+        top: 15px;
+        position: absolute;
+        width: 30px;
+        right: 60px;
+    }
+    
+    .burger{
+        width: 54px;
+        margin-top: -15px;
+        margin-left: 35px;
+    }
+
+    #burger:checked + label + .nav-block{
+        display: block;
+        animation: show .5s ease;  
+    }
+
+    .btn-close {
+        margin-top:-15px;
+        margin-left:32px;
+    }
+
+    .nav-block {
+        display: none;
+    }
+
+    .nav-link {
+        margin-top:49px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgba(30, 6, 69, 1);
+        width: 179px;
+        height: 152px;
+        top: 54px;
+        left: 181px;
+        padding: 0; 
+        border-radius: 8px, 0px, 8px, 8px;
+        text-align: left;        
+    }
+
+    .link {
+        font-weight: 14px;
+        width: 130px;
+        padding: 4px;
+        padding: 24px, 33px, 24px, 0px;
+        line-height: 16px;
+    }
+
+    .nav-right {
+        position: fixed;
+    } 
+   
+    .btn-promo {
+        width: 139px;
+        height: 34px;
+        margin-top: 10px;
+        margin-left: 160px;
+    }
+
+    .bg-right,.bg-left {
+        width: 50%;
+        height: 100vh;
+        margin: 0px;
+    }
+
+    .bg-right {
+        transform: scale(1);
+    }
+
+    #bg-stars-rectangle, #bg-circle {
+        display: none;
+    }
+
+    #main-container,.text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+        align-items: center;
+        max-width: 100%;
+        display: block;
+        margin: 0px;
+        top:0;
+    }
+
+     h1 {
+        width: 100vw;
+        margin-top:-630px;
+        font-size: 36px; 
+        line-height: 38px;
+        text-align: center;
+    }
+
+    p {
+        margin-top: 0px;
+        width: 88vw;
+        margin-left: 20px;
+        font-size: 14px;
+        text-align: center; 
+    }
+
+    .solar {
+        transform: scale(.8);
+        margin-right: 0px;
+        margin-left: 20px;
+        margin-top: -55px;
+    }
+
+    #app {
+        margin-top: 700px;
+        flex-wrap: nowrap;
+        margin-left: 115px;
+        margin-right: 0;
+    }
+
+    .app {
+        margin-top: -400px;
+        width: 158px;
+        height: 54px;
+    }
+    
+    .card-container,.card{
+        margin: 0px;
+    }
+
+    .card-container {
+        margin-top: -770px;
+    }
+
+    .card,.Iphone-screen {
+        transform: scale(.8);
+        width: 100%;
+    }
+
+    #Iphone-screen,.Iphone-screen{
+        margin: 0px;
+    }
+
+    #Iphone-screen,.Iphone-screen,#bg-container{
+        width: 100%;
+    }
+
+    .Iphone-screen {
+        transform: scale(.4);
+        margin-top: -529px;
+        margin-right: 61px;
+    }
+
+    .Iphone-screen-up {
+        transform: scale(.4);
+        margin-top: -90px;
+        margin-right: -185px;
+    }
+}
+
+@keyframes show {
+
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
